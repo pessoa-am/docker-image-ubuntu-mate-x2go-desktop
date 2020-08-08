@@ -1,6 +1,6 @@
-FROM ubuntu:xenial
+FROM ubuntu:bionic
 
-MAINTAINER Josh Lukens <jlukens@botch.com>
+MAINTAINER Alberto Pessoa <pessoa.am@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -15,8 +15,7 @@ RUN apt-get update -y -qq && \
     apt-get install locales software-properties-common -y && \
     locale-gen en_US.UTF-8 && \
 
-# add Mate and x2go repositoires
-    add-apt-repository ppa:ubuntu-mate-dev/xenial-mate && \
+# add x2go repositoires
     add-apt-repository ppa:x2go/stable && \
     apt-get update -y -qq && \
 

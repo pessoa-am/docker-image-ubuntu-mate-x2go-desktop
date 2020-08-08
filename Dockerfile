@@ -24,7 +24,7 @@ RUN apt-get update -y -qq && \
 
 # install x2go and Mate
     apt-get install -y x2goserver x2goserver-xsession && \
-    apt-get install -y --no-install-recommends ubuntu-mate-core mate-desktop-environment mate-notification-daemon x2gomatebindings && \
+    apt-get install -y ubuntu-mate-core mate-desktop-environment mate-notification-daemon x2gomatebindings && \
 
 # clean up
     apt-get autoclean && apt-get autoremove && \

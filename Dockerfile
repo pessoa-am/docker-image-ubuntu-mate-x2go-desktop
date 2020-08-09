@@ -1,4 +1,4 @@
-FROM ubuntu:bionic
+FROM ubuntu:focal
 
 MAINTAINER Alberto Pessoa <pessoa.am@gmail.com>
 
